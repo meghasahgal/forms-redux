@@ -24,7 +24,7 @@ const articleReducer = (state = initialState, action) => {
     case LOAD_ARTICLES:
       return { ...state, entries: [...action.articles] };
     case ADD_ARTICLE:
-      // update state via spread (create a copy), and then spread out the entries and add on the payload of the article
+      // update state via spread (create aspread out the entries and add on the payload of the article
       return { ...state, entries: [...state.entries, action.payload] };
     default:
       return state;
